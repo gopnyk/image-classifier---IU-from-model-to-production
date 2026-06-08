@@ -1,0 +1,10 @@
+kagglehub
+pandas
+matplotlib
+fastapi
+uvicorn
+mlflow
+numpy
+jupyter
+tensorboard
+python-multipart

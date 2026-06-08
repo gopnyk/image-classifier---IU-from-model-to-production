@@ -1,0 +1,31 @@
+artifact_path: file:C:/Users/ugniu/PycharmProjects/Image classifier Project - From
+  model to production (IU)/mlruns/1/models/m-eb9101808bbf491285f4edb5b3249191/artifacts
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.13.7
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.21.0
+    model_type: keras
+    save_format: tf
+is_signature_from_type_hint: false
+mlflow_version: 3.12.0
+model_id: m-eb9101808bbf491285f4edb5b3249191
+model_size_bytes: 6638829
+model_uuid: m-eb9101808bbf491285f4edb5b3249191
+prompts: null
+run_id: ca76bd0a28274f588f7a5e8eff99aae4
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1, 64,
+    64, 3]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1,
+    10]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-05-26 08:37:41.801980'
