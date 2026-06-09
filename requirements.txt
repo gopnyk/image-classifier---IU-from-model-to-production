@@ -10,3 +10,4 @@ tensorboard
 python-multipart
 tensorflow>=2.13.0
 pillow
+keras>=3.0.0
