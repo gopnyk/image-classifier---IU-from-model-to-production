@@ -5,7 +5,7 @@ name: 'Nightly scheduler'
 on:
   schedule:
     - cron: '0 3 * * 1-5'
-
+  workflow_dispatch:
 
 
 #setting up python environment and directing the application to run the batch processing file
