@@ -8,6 +8,6 @@ numpy
 jupyter
 tensorboard
 python-multipart
-tensorflow==2.21.0
+tensorflow==2.16.0
 pillow
-keras>=3.0.0
+keras==2.16.0
