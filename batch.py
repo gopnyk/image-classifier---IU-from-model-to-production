@@ -12,8 +12,7 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 
 # Load the model
-model = tf.keras.models.load_model("models/image_classifier.keras", safe_mode= False,
-                                   custom_objects={"quantization_config": None})
+model = tf.keras.models.load_model("models/image_classifier.keras")
 
 # All categories within the model
 class_names = ['beauty_products', 'electronics', 'fashion', 'fitness_equipments', 'furniture',

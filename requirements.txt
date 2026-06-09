@@ -8,5 +8,5 @@ numpy
 jupyter
 tensorboard
 python-multipart
-tensorflow==2.21.0
+tensorflow==2.17.0
 pillow
