@@ -22,4 +22,6 @@ jobs:
 
       - run: pip install -r requirements.txt
 
+      - run: pip install tensorflow
+
       - run: python batch.py
