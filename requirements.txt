@@ -8,3 +8,4 @@ numpy
 jupyter
 tensorboard
 python-multipart
+tenserflow
