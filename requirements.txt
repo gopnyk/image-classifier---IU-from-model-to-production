@@ -8,4 +8,5 @@ numpy
 jupyter
 tensorboard
 python-multipart
-tensorflow
+tensorflow-cpu
+pillow
