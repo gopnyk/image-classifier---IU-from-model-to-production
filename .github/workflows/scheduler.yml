@@ -1,0 +1,25 @@
+
+name: 'Nightly scheduler'
+
+#scheduling the processing on 3am from monday to friday
+on:
+  schedule:
+    - cron: '0 3 * * 1-5'
+
+
+
+#setting up python environment and directing the application to run the batch processing file
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+
+      - run: pip install -r requirements.txt
+
+      - run: python batch.py
