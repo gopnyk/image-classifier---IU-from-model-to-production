@@ -3,10 +3,12 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 import json
+from datetime import date
 
 UPLOAD_DIR = "to_be_processed"
-OUTPUT_FILE = "outputs/predictions.json"
+OUTPUT_FILE = f"outputs/predictions_{date.today()}.json"
 
+#create an outputs folder
 os.makedirs("outputs", exist_ok=True)
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
