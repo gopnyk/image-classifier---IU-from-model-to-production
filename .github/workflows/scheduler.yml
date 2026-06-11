@@ -24,5 +24,20 @@ jobs:
 
       - run: pip install --no-cache-dir -r requirements.txt
 
-
       - run: python batch.py
+
+      # Commit and Push Changes
+      - name: Commit and Push Changes
+        run: |
+          # configure user
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+          # stage any file changes to be committed
+          git add .
+
+          # make commit with staged changes
+          git commit -m 'batch done' || echo "No changes"
+
+          # push the commit back up to source GitHub repository
+          git push
