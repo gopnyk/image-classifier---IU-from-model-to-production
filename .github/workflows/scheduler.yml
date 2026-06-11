@@ -7,6 +7,8 @@ on:
     - cron: '0 3 * * 1-5'
   workflow_dispatch:
 
+permissions:
+  contents: write
 
 #setting up python environment and directing the application to run the batch processing file
 jobs:
