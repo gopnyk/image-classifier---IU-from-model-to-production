@@ -21,7 +21,7 @@ class_names = ['beauty_products', 'electronics', 'fashion', 'fitness_equipments'
                'home_appliances', 'kitchenware', 'musical_instruments', 'study_things', 'toys']
 
 
-#Image preprocessing
+#Image preprocessing - resizng the image
 def preprocess(path):
     img = Image.open(path).convert("RGB")
     img = img.resize((64, 64))
